@@ -24,7 +24,7 @@ def clone_supabase_repo():
         print("Cloning the Supabase repository...")
         run_command([
             "git", "clone", "--filter=blob:none", "--no-checkout",
-            "https://github.com/supabase/supabase.git"
+            "https://gitclone.com/github.com/supabase/supabase.git"
         ])
         os.chdir("supabase")
         run_command(["git", "sparse-checkout", "init", "--cone"])
